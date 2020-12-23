@@ -6,7 +6,8 @@ Dependency:
 - Chrome or Chromium
 - Python
 
-Adding the driver folder to user path according to your os
+Adding the driver folder to user path according to your OS :
+
 Windows: Windows button (click right) > System > Advanced system settings > Environment variables
 at User Environment variables: select path > modify > add the driver folder to path > ok > ok > ok
 
