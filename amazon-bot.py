@@ -11,7 +11,7 @@ class AmazonBot:
         readme_disclaimer = input(
             "Amazon Purchase Bot\nby pyrokitsu\n\nIf you have any problems with the script, contact me at:\nDiscord: "
             "pyrokitsu#1237\nGitHub: https://github.com/pyrokitsu\n\nPlease READ the readme before proceeding.\n"
-            "[x] exit [y] proceed\n> ")
+            "[x] abort [y] proceed\n> ")
         if readme_disclaimer == 'x':
             self.driver.close()
             os.system('Taskkill.exe /IM cmd.exe')
