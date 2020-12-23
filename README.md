@@ -1,5 +1,6 @@
 # Amazon Purcharse Bot
-Amazon Purchase Bot is for automatize article checking and bought in case of availability 
+Amazon Purchase Bot is for automatize article checking and bought in case of availability
+Working for amazon.fr with windows
 
 # Installing
 Dependency:
