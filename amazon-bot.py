@@ -8,6 +8,11 @@ class AmazonBot:
         self.driver = webdriver.Chrome()
 
     def main(self):
+        self.driver.get('https://www.amazon.fr')
+        # Default = 15, change this setting depending on your connection.
+        sleep(15)
+        accept_cookie = self.driver.find_element_by_xpath('//*[@id="sp-cc-accept"]')
+        accept_cookie.click()
         readme_disclaimer = input(
             "Amazon Purchase Bot\nby pyrokitsu\n\nIf you have any problems with the script, contact me at:\nDiscord: "
             "pyrokitsu#1237\nGitHub: https://github.com/pyrokitsu\n\nPlease READ the readme before proceeding.\n"
@@ -17,11 +22,6 @@ class AmazonBot:
             os.system('Taskkill.exe /IM cmd.exe')
         elif readme_disclaimer == 'y':
             clear_screen()
-            self.driver.get('https://www.amazon.fr')
-            # Default = 15, change this setting depending on your connection.
-            sleep(15)
-            accept_cookie = self.driver.find_element_by_xpath('//*[@id="sp-cc-accept"]')
-            accept_cookie.click()
             print("\n\nPlease login to your Amazon account! (You have 60 seconds!)")
             # Default = 60, change this setting depending on your speed to login at your account.
             sleep(60)
