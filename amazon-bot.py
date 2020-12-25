@@ -22,7 +22,7 @@ class AmazonBot:
             os.system('Taskkill.exe /IM cmd.exe')
         elif readme_disclaimer == 'y':
             clear_screen()
-            print("\n\nPlease login to your Amazon account! (You have 60 seconds!)")
+            print("Please login to your Amazon account! (You have 60 seconds!)")
             # Default = 60, change this setting depending on your speed to login at your account.
             sleep(60)
         else:
