@@ -9,7 +9,7 @@ class AmazonBot:
 
     def main(self):
         self.driver.get('https://www.amazon.fr')
-        # Default = 15, change this setting depending on your connection.
+        # Default = 10, change this setting depending on your connection.
         sleep(10)
         accept_cookie = self.driver.find_element_by_xpath('//*[@id="sp-cc-accept"]')
         accept_cookie.click()
