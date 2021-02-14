@@ -5,13 +5,11 @@ Working for amazon.fr with Windows
 
 # Installing
 Dependency:
-- Chrome or Chromium
+- Chrome
 - Python
+- Selenium
 
 Adding the driver folder to user path according to your OS :
 
 Windows: Windows button (click right) > System > Advanced system settings > Environment variables
 at User Environment variables: select path > modify > add the driver folder to path > ok > ok > ok
-
-Dependency development: 
-pip install requirement.txt
